@@ -1,0 +1,207 @@
+.row
+  .span1.lead B1
+  .span6 
+    =@math_test.B1_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B1', :value => "#{@user_answers['B1']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B1']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B2
+  .span6
+    =@math_test.B2_content
+    .row
+      .span4.offset1
+        =image_tag @math_test.B2_image_url
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B2', :value => "#{@user_answers['B2']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B2']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B3
+  -unless @math_test.B3_image_url.blank?
+    .span4
+      =@math_test.B3_content
+    .span2
+      =image_tag @math_test.B3_image_url
+  -else
+    .span6
+      =@math_test.B3_content
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B3', :value => "#{@user_answers['B3']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B3']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B4
+  -unless @math_test.B4_image_url.blank?
+    .span4
+      =@math_test.B4_content.html_safe
+    .span2
+      =image_tag @math_test.B4_image_url
+  -else
+    .span6
+      =@math_test.B4_content.html_safe
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B4', :value => "#{@user_answers['B4']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B4']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B5
+  .span6 
+    =@math_test.B5_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B5', :value => "#{@user_answers['B5']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B5']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B6
+  -unless @math_test.B6_image_url.blank?
+    .span4
+      =@math_test.B6_content
+    .span2
+      =image_tag @math_test.B6_image_url
+  -else
+    .span6
+      =@math_test.B6_content
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B6', :value => "#{@user_answers['B6']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B6']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B7
+  .span6 
+    =@math_test.B7_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B7', :value => "#{@user_answers['B7']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B7']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B8
+  -unless @math_test.B8_image_url.blank?
+    .span6
+      =@math_test.B8_content
+      .row
+        .span4.offset1
+          =image_tag @math_test.B8_image_url
+  -else
+    .span6
+      =@math_test.B8_content
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B8', :value => "#{@user_answers['B8']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B8']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B9
+  -unless @math_test.B9_image_url.blank?
+    .span4
+      =@math_test.B9_content
+    .span2
+      =image_tag @math_test.B9_image_url
+  -else
+    .span6
+      =@math_test.B9_content
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B9', :value => "#{@user_answers['B9']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B9']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B10
+  .span6 
+    =@math_test.B10_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B10', :value => "#{@user_answers['B10']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B10']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B11
+  -unless @math_test.B11_image_url.blank?
+    .span4
+      =@math_test.B11_content
+    .span2
+      =image_tag @math_test.B11_image_url
+  -else
+    .span6
+      =@math_test.B11_content
+        
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B11', :value => "#{@user_answers['B11']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B11']
+      =submit_tag 'Проверить', :class => 'btn'
+
+
+.row
+  .span1.lead B12
+  .span6 
+    =@math_test.B12_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B12', :value => "#{@user_answers['B12']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B12']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B13
+  .span6 
+    =@math_test.B13_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B13', :value => "#{@user_answers['B13']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B13']
+      =submit_tag 'Проверить', :class => 'btn'
+
+.row
+  .span1.lead B14
+  .span6 
+    =@math_test.B14_content
+.row
+  .span6.offset1
+    =form_tag @math_test, :class => "form-inline", :method => :get do
+      =text_field 'answers', 'B14', :value => "#{@user_answers['B14']}", :placeholder => "Ответ", :class => 'input-small'
+      =glyph session[:answers_response]['B14']
+      =submit_tag 'Проверить', :class => 'btn'
+
+-# Здесь по условию, является ли пользователь администратором
+.row
+  .span2.offset3
+    =link_to "Редактировать", edit_math_test_path(@math_test), :class => 'btn btn-small btn-block btn-warning'
+    =button_to "Удалить", math_test_path(@math_test), :method => :delete, :confirm => 'Удалить?', :class => 'btn btn-small btn-block btn-danger'

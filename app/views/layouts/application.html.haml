@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title О, ЕГЭ!
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    = mathjax_tag
+  %body
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          =link_to 'О, ЕГЭ!', root_path, :class => 'brand' 
+          .pull-right
+            %ul.nav
+              %li.active
+                -math_test = @math_test || @last_math_test
+                =link_to "Тренировочный вариант от #{math_test.release_date.to_date}", math_test
+              %li
+                =link_to 'Все варианты', math_tests_path
+    .container 
+      .row
+        .span2
+          -#дополнительная информация
+        .span8
+          = bootstrap_flash
+          = yield
+        .span2
+          -#дополнительная информация
+    

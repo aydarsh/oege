@@ -1,0 +1,9 @@
+-@math_tests.each do |math_test|
+	.row
+		.span6.offset1
+			=link_to "Тренировочный вариант от #{math_test.release_date.to_date}", math_test
+
+-# Здесь по условию, является ли пользователь администратором
+.row
+	.span2.offset3
+		=link_to "Новый", new_math_test_path, :class => 'btn btn-small btn-block btn-warning'

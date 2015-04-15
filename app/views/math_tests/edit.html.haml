@@ -1,0 +1,196 @@
+.row
+	.span4.offset1 
+		%h3 Изменение данных
+= form_for @math_test, :html => {:class => 'form-horizontal'} do |form| 
+	.row
+		.span6
+			.control-group
+				.control-label Дата
+				.controls
+					=form.text_field :release_date, :class => 'input-small', :value => "#{@math_test.release_date.to_date}"
+
+	.row
+		.span1.lead B1
+		.span6 
+			=form.text_area :B1_content, :rows => 4, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B1_answer, :class => 'input-small'
+			      
+	.row
+		.span1.lead B2
+		.span6
+			=form.text_area :B2_content, :rows => 5, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B2_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B2_answer, :class => 'input-small'
+		
+	.row
+		.span1.lead B3
+		.span6
+			=form.text_area :B3_content, :rows => 2, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B3_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B3_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B4
+		.span6 
+			=form.text_area :B4_content, :rows => 7, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B4_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B4_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B5
+		.span6 
+			=form.text_area :B5_content, :rows => 2, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B5_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B6
+		.span6 
+			=form.text_area :B6_content, :rows => 2, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B6_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B6_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B7
+		.span6 
+			=form.text_area :B7_content, :rows => 2, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B7_answer, :class => 'input-small'
+	
+	.row
+		.span1.lead B8
+		.span6 
+			=form.text_area :B8_content, :rows => 3, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B8_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B8_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B9
+		.span6 
+			=form.text_area :B9_content, :rows => 3, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B9_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B9_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B10
+		.span6 
+			=form.text_area :B10_content, :rows => 4, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B10_answer, :class => 'input-small'
+	
+	.row
+		.span1.lead B11
+		.span6 
+			=form.text_area :B11_content, :rows => 4, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Рисунок
+				.controls
+					=form.text_field :B11_image_url, :class => 'input-block-level'
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B11_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B12
+		.span6 
+			=form.text_area :B12_content, :rows => 7, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B12_answer, :class => 'input-small'
+
+	.row
+		.span1.lead B13
+		.span6 
+			=form.text_area :B13_content, :rows => 5, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B13_answer, :class => 'input-small'
+	
+	.row
+		.span1.lead B14
+		.span6 
+			=form.text_area :B14_content, :rows => 2, :class => 'input-block-level'
+	.row
+		.span6
+			.control-group
+				.control-label Ответ
+				.controls
+					=form.text_field :B14_answer, :class => 'input-small'
+	
+	.row
+		.span2.offset3
+			=form.submit 'Сохранить', :class => 'btn btn-small btn-block btn-warning'
